@@ -1,2 +1,2 @@
-# eventio_katai
-Prototyping a Katai struct implementation of eventio data structures
+# eventio_kaitai
+Prototyping a Kaitai struct implementation of eventio data structures
