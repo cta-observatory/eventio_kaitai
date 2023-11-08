@@ -1,4 +1,4 @@
-from eventio_kaitai_parser import EventioKaitaiParser
+from eventio_kaitai import EventioKaitaiParser, get_payload_address
 from os import path
 from itertools import zip_longest
 
@@ -23,7 +23,7 @@ def test_file_has_objects_at_expected_position():
     f = EventioKaitaiParser.from_file(TESTFILE)
 
     for o, (addr, size) in zip_longest(f.objects, expected):
-        # assert o.object.header.content_address == addr
+        assert get_payload_address(o.object) == addr
         assert o.object.header.length == size
 
 
