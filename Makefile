@@ -5,7 +5,7 @@ list:
 
 py:
 	# read-pos adds object start and end markers
-	kaitai-struct-compiler --read-pos -t python eventio.ksy
+	kaitai-struct-compiler --read-pos -t python eventio_kaitai.ksy
 
 test:
 	pytest
