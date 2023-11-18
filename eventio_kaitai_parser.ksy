@@ -1,5 +1,5 @@
 meta:
-  id: eventio
+  id: eventio_kaitai_parser
   title: EventIO file
   license: CC0-1.0
   ks-version: 0.1
